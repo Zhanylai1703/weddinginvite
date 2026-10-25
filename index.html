@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ead8c4">
+  <title>Тойго чакыруу — 22-ноябрь, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Marck+Script&subset=cyrillic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="envelope-stage" id="envelopeStage" aria-label="Тойго чакыруу конверти">
+      <div class="language-switch"><button type="button" class="lang-button active" data-lang="ky">КЫР</button><span>·</span><button type="button" class="lang-button" data-lang="ru">РУС</button></div>
+      <div class="intro-note" data-i18n="intro">Сиздерге<br><span>сүйүнчүлүү кабарыбыз бар…</span></div>
+      <button class="envelope" id="openInvitation" aria-label="Чакыруу катын ачуу">
+        <div class="envelope-photo"></div>
+        <div class="envelope-topline" data-i18n="dateShort">22 · НОЯБРЬ · 2026</div>
+        <div class="envelope-title">
+          <span data-i18n="envelopeLabel">ҮЙЛӨНҮҮ ТОЙГО ЧАКЫРУУ</span>
+          <strong>
+            <em>Алтынай & Адилет</em>
+          </strong>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="wax-seal"><span>♡</span></div>
+        <div class="open-hint"><span data-i18n="openHint">АЧУУ ҮЧҮН БАСЫҢЫЗ</span> <span>↓</span></div>
+      </button>
+      <p class="tiny-note" data-i18n="tinyNote">Сизди кубанычыбызга ортоктош болууга чакырабыз ♡</p>
+    </section>
+
+    <section class="invitation" id="invitation" aria-hidden="true">
+      <div class="invitation-topbar"><button class="back-button" id="backToEnvelope" data-i18n="back">← Конвертке кайтуу</button><div class="language-switch"><button type="button" class="lang-button active" data-lang="ky">КЫР</button><span>·</span><button type="button" class="lang-button" data-lang="ru">РУС</button></div></div>
+      <div class="paper-card">
+        <div class="paper-flowers flowers-one">✳</div>
+        <div class="paper-flowers flowers-two">✧</div>
+        <p class="eyebrow" data-i18n="dear">КЫМБАТТУУ ТУУГАНДАР ЖАНА ЖАКЫНДАР!</p>
+        <div class="little-heart">— ♡ —</div>
+        <h1 data-i18n="headline">Биз баш кошобуз!</h1>
+        <p class="invitation-copy" data-i18n="invitationCopy">Өмүрүбүздөгү эң маанилүү жана өзгөчө күнүбүздү биз менен бирге бөлүшүүгө сиздерди чын жүрөктөн чакырабыз —</p>
+        <p class="wedding-word" data-i18n="weddingWord">үйлөнүү тоюбузга</p>
+
+        <div class="photo-stack">
+          <figure class="polaroid polaroid-left">
+            <img src="assets/couple-closeup.jpeg" alt="Романтичный портрет пары">
+            <figcaption data-i18n="photoCaption1">Биздин тарыхыбыз уланууда…</figcaption>
+          </figure>
+          <figure class="polaroid polaroid-right">
+            <img src="assets/couple-heart.jpeg" alt="Пара складывает руки в форме сердца">
+            <figcaption data-i18n="photoCaption2">Бул күндү сиздер менен бөлүшкүбүз келет ♡</figcaption>
+          </figure>
+        </div>
+
+        <div class="details">
+          <div class="detail">
+            <span class="detail-icon">▦</span>
+            <span class="detail-label" data-i18n="dateLabel">КҮНҮ</span>
+            <strong data-i18n="dateValue">22-ноябрь</strong>
+            <span data-i18n="weekday">жекшемби</span>
+            <small>2026</small>
+          </div>
+          <div class="detail">
+            <span class="detail-icon pin">⌖</span>
+            <span class="detail-label" data-i18n="placeLabel">ӨТҮҮЧҮ ЖЕР</span>
+
+            <a href="https://go.2gis.com/ybFO2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="restaurant-link">
+              <strong data-i18n="restaurant">Ресторан</strong>
+              <span class="rio">RIO</span>
+              <span class="map-hint" data-i18n="mapHint">картадан көрүү</span>
+            </a>
+          </div>
+          <div class="detail">
+            <span class="detail-icon">◷</span>
+            <span class="detail-label" data-i18n="timeLabel">УБАКТЫСЫ</span>
+            <strong class="time">16:00</strong>
+          </div>
+        </div>
+        <div class="little-heart">— ♡ —</div>
+        <p class="closing" data-i18n="closing">СИЗДЕРДИ<br>КОНАКТАРЫБЫЗДЫН АРАСЫНДА КӨРҮҮГӨ КУБАНЫЧТАБЫЗ!</p>
+        <div class="botanical">❧</div>
+        <button class="rsvp-button" id="rsvpButton"><span data-i18n="rsvp">Келериңизди ырастоо</span> <span>↗</span></button>
+        <p class="rsvp-note" id="rsvpNote" data-i18n="rsvpNote">Биз менен болоруңузду билдирсеңиз, ыраазы болобуз.</p>
+      </div>
+      <footer data-i18n="footer">Сүйүү менен, өзгөчө күнүбүздү күтөбүз ♡</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
