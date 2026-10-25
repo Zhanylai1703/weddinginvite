@@ -53,6 +53,6 @@ backButton.addEventListener('click',()=>{
 });
 rsvpButton.addEventListener('click',()=>{
  const message=encodeURIComponent(translations[currentLang].rsvpMessage);
- const whatsappNumber='+996700947741';
+ const whatsappNumber='+996778666666';
  window.open(`https://wa.me/${whatsappNumber.replace(/\D/g,'')}?text=${message}`,'_blank','noopener');
 });

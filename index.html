@@ -12,6 +12,55 @@
 </head>
 <body>
   <main>
+
+    <audio
+  id="bgMusic"
+  src="https://invite-eight-psi.vercel.app/music.mp3"
+  loop
+  preload="auto"
+  playsinline
+></audio>
+    <button id="musicButton" class="music-button" type="button">
+  ♫
+</button>
+
+<style>
+.music-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+  padding: 12px 18px;
+  border: 1px solid #d9ad5a;
+  border-radius: 30px;
+  background: #560d12;
+  color: #ffe8b8;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px #0002;
+}
+</style>
+
+<script>
+const music = document.getElementById('bgMusic');
+const musicButton = document.getElementById('musicButton');
+
+musicButton.addEventListener('click', async () => {
+  if (music.paused) {
+    try {
+      await music.play();
+      musicButton.textContent = '♫';
+    } catch (error) {
+      console.error('Ошибка музыки:', error);
+      musicButton.textContent = 'Нажмите ещё раз ♫';
+    }
+  } else {
+    music.pause();
+    musicButton.textContent = '♫';
+  }
+});
+</script>
     <section class="envelope-stage" id="envelopeStage" aria-label="Тойго чакыруу конверти">
       <div class="language-switch"><button type="button" class="lang-button active" data-lang="ky">КЫР</button><span>·</span><button type="button" class="lang-button" data-lang="ru">РУС</button></div>
       <div class="intro-note" data-i18n="intro">Сиздерге<br><span>сүйүнчүлүү кабарыбыз бар…</span></div>
@@ -21,7 +70,7 @@
         <div class="envelope-title">
           <span data-i18n="envelopeLabel">ҮЙЛӨНҮҮ ТОЙГО ЧАКЫРУУ</span>
           <strong>
-            <em>Алтынай & Адилет</em>
+            <em>Адилет & Алтынай</em>
           </strong>
         </div>
         <div class="envelope-flap"></div>

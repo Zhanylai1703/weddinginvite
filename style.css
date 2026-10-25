@@ -911,7 +911,7 @@ button.envelope .envelope-title span {
 button.envelope .envelope-title strong { margin-top: 4px !important; }
 button.envelope .envelope-title em {
   display: block !important; white-space: nowrap !important; color: #6b4630 !important; text-shadow: none !important;
-  font-size: clamp(30px, 9.4vw, 42px) !important; line-height: 1.25 !important;
+  font-size: clamp(25px, 8.4vw, 38px) !important; line-height: 1.25 !important;
 }
 button.envelope .open-hint {
   bottom: 4% !important; font-size: clamp(9px, 2.5vw, 11px) !important; letter-spacing: .2em !important; color: #9a7351 !important;
