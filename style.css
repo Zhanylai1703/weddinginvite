@@ -49,7 +49,7 @@ button { font: inherit; }
 .envelope-title { position: absolute; top: 32%; left: 8%; text-shadow: 0 2px 15px rgba(30,20,14,.25); }
 .envelope-title span { font-size: 11px; text-transform: uppercase; letter-spacing: .26em; }
 .envelope-title strong { display: block; font-weight: 400; font-size: clamp(30px, 8vw, 49px); line-height: .94; margin-top: 13px; }
-.envelope-title em { font-family: "Marck Script", "Great Vibes", cursive; font-size: clamp(68px, 17vw, 100px); font-weight: 400; }
+.envelope-title em { font-family: "Marck Script", "Cormorant Garamond", Georgia, serif; font-size: clamp(68px, 17vw, 100px); font-weight: 400; }
 .envelope-flap {
   position: absolute; bottom: 0; left: 0; width: 100%; height: 44%;
   background: linear-gradient(145deg, #fff7ec, #e8d1b9);
@@ -86,7 +86,7 @@ button { font: inherit; }
 .little-heart { margin: 14px 0; color: #89634a; letter-spacing: .3em; }
 h1 { font-size: clamp(36px, 8vw, 56px); font-weight: 400; margin: 0; }
 .invitation-copy { max-width: 440px; margin: 10px auto 0; font-size: 18px; line-height: 1.35; color: #6f5543; }
-.wedding-word { margin: 0 0 18px; font-family: "Marck Script", "Great Vibes", cursive; font-size: clamp(42px, 10vw, 65px); }
+.wedding-word { margin: 0 0 18px; font-family: "Marck Script", "Cormorant Garamond", Georgia, serif; font-size: clamp(42px, 10vw, 65px); }
 .photo-stack { display: flex; justify-content: center; align-items: center; gap: 10px; margin: 12px auto 28px; max-width: 590px; }
 .polaroid { width: 49%; margin: 0; padding: 8px 8px 12px; background: #fffaf2; box-shadow: 0 7px 16px rgba(72,47,29,.18); }
 .polaroid-left { transform: rotate(-4deg); }
@@ -94,7 +94,7 @@ h1 { font-size: clamp(36px, 8vw, 56px); font-weight: 400; margin: 0; }
 .polaroid img { display: block; width: 100%; height: clamp(170px, 36vw, 300px); object-fit: cover; }
 .polaroid-left img { object-position: 51% 43%; }
 .polaroid-right img { object-position: 50% 44%; }
-.polaroid figcaption { font-family: "Marck Script", "Great Vibes", cursive; font-size: clamp(16px, 3.6vw, 23px); margin-top: 8px; }
+.polaroid figcaption { font-family: "Marck Script", "Cormorant Garamond", Georgia, serif; font-size: clamp(16px, 3.6vw, 23px); margin-top: 8px; }
 .details { display: grid; grid-template-columns: repeat(3, 1fr); margin: 28px 0 20px; }
 .detail { display: flex; flex-direction: column; align-items: center; padding: 0 8px; min-width: 0; }
 .detail + .detail { border-left: 1px solid var(--line); }
@@ -448,7 +448,7 @@ html, body {
   line-height: 1.05;
 }
 .envelope-title em {
-  font-family: "Marck Script", "Great Vibes", cursive;
+  font-family: "Marck Script", "Cormorant Garamond", Georgia, serif;
   font-size: clamp(43px, 11vw, 67px);
   font-style: normal;
   font-weight: 400;
@@ -645,7 +645,7 @@ button.envelope:focus-visible {
 }
 .envelope-title em {
   display: block !important;
-  font-family: "Marck Script", "Great Vibes", cursive !important;
+  font-family: "Marck Script", "Cormorant Garamond", Georgia, serif !important;
   font-size: clamp(38px, 9vw, 54px) !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -728,7 +728,7 @@ button.envelope:focus-visible {
   text-align: center;
   text-transform: none;
   letter-spacing: 0;
-  font-family: "Marck Script", "Great Vibes", cursive;
+  font-family: "Marck Script", "Cormorant Garamond", Georgia, serif;
   font-size: clamp(39px, 10vw, 58px);
   line-height: 1.02;
 }
@@ -809,7 +809,7 @@ button.envelope {
 }
 .envelope-title em {
   display: block !important;
-  font-family: "Marck Script", "Great Vibes", cursive !important;
+  font-family: "Marck Script", "Cormorant Garamond", Georgia, serif !important;
   font-size: clamp(49px, 12vw, 76px) !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -911,7 +911,7 @@ button.envelope .envelope-title span {
 button.envelope .envelope-title strong { margin-top: 4px !important; }
 button.envelope .envelope-title em {
   display: block !important; white-space: nowrap !important; color: #6b4630 !important; text-shadow: none !important;
-  font-size: clamp(24px, 7.5vw, 34px) !important; line-height: 1.25 !important;
+  font-size: clamp(30px, 9.4vw, 42px) !important; line-height: 1.25 !important;
 }
 button.envelope .open-hint {
   bottom: 4% !important; font-size: clamp(9px, 2.5vw, 11px) !important; letter-spacing: .2em !important; color: #9a7351 !important;
@@ -922,3 +922,8 @@ button.envelope .open-hint span:last-child { display: none !important; }
 /* Cyrillic script font runs wider than Great Vibes */
 .wedding-word { font-size: clamp(30px, 8vw, 46px) !important; line-height: 1.2; }
 .polaroid figcaption { font-size: clamp(14px, 3.4vw, 20px) !important; line-height: 1.25; }
+
+/* decorative glyphs: force text style (no emoji) and orient */
+.paper-flowers { font-family: "Cormorant Garamond", Georgia, serif !important; font-variant-emoji: text; }
+.flowers-one { transform: rotate(-30deg); }
+.flowers-two { transform: rotate(150deg); }
